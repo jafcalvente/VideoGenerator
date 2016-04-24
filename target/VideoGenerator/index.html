@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VideoGenerator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/videogenerator.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1>Pruebas de generación de video</h1>
+	
+	<div class="withDashedBorder"><img id="image1"></div>
+	
+	<div class="withDashedBorder">
+		<label for="percent">Pocentaje</label> 
+		<input id="percent" name="percent">
+		<div id="cont" data-pct="100">
+			<svg id="svg">
+				<circle r="90" cx="100" cy="100" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+				<circle id="bar" r="90" cx="100" cy="100" fill="transparent" 
+					stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+			</svg>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+	<script src="js/videogenerator.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>

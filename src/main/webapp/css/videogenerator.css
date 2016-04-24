@@ -1,0 +1,60 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.withDashedBorder {
+	border-style: dashed;
+	border-color: black;
+	padding: 10px;
+	margin: 10px;
+	float:left;
+}
+
+#image1 {
+	height: 400px;
+}
+
+svg {
+	height: 200px;
+	width: 200px;
+	viewPort: 0 0 100 100;
+}
+
+#svg circle {
+	stroke-dashoffset: 0;
+	transition: stroke-dashoffset 1s linear;
+	stroke: black;
+	stroke-width: 1em;
+}
+
+#svg #bar {
+	stroke: rgb(84,138,184);
+}
+
+#cont {
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	border-radius: 100%;
+	position: relative;
+}
+
+#cont:after {
+	content: attr(data-pct) "%";
+	color: rgb(174,173,172);
+	font-size: 2em;
+	text-align: center;
+	line-height: 160px;
+	position: absolute;
+	height: 160px;
+	width: 160px;
+	left: 50%;
+	top: 50%;
+	margin-top: -80px;
+	margin-left: -80px;
+	border-radius: 100%;
+}
